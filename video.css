@@ -68,13 +68,18 @@ main {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 11px;
     
 }
 
 .font-menu:hover {
     transform: scale(1.1);
 }
+
+.font-estrofe:hover {
+    transform: scale(1.1);
+}
+
 
 .btn-introducao:hover {
     color: black;
