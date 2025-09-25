@@ -14,11 +14,13 @@ body {
 
 body::-webkit-scrollbar {
     display: none;
-    /* Para Chrome, Safari, Edge */
+    /* Para Funcionar o Scrool no Chrome
+    Unico recurso adquirido diretamente do ChatGPT*/
 }
 
-header {
+main {
     background-color: black;
+    flex-grow: 1;
     width: 100%;
     text-align: center;
     padding-top: 60px;
@@ -28,8 +30,19 @@ header {
 section {
     background-color: black;
     display: flex;
+    gap: 300px;
     flex-direction: column;
     align-items: center;
+}
+
+footer {
+        background-color: rgb(0, 0, 0);
+    padding: 20px;
+    width: 100%;
+    height: auto;  background-position: center;
+    background-size: cover;
+    color: rgb(255, 255, 255); 
+    text-align: center; 
 }
 
 .video {
@@ -49,6 +62,25 @@ section {
     gap: 11px;
 }
 
+.btn-home {
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 100px;
+}
+
+.btn-home button {
+    font-family: "Oswald", sans-serif;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 20px;
+    height: 70px;
+    width: 150px;
+    border: 1px solid ;
+    background-color: black;
+    color: white;
+}
+
 .font-home {
     font-family: "Press Start 2P", system-ui;
     
@@ -57,62 +89,11 @@ section {
     opacity: 1;
     font-size: 14px;
     margin: 20px;
-
-
+    
+    
     color: rgba(255, 255, 255, 0.527);
     background-color: black;
     border: 0px solid black;
-}
-
-nav {
-    background-color: black;
-    width: 80%;
-    text-align: center;
-    border: 1px solid white;
-}
-
-ul {
-    width: 100%;
-    display: flex;
-}
-
-li {
-    background: none;
-    padding: 10px;
-    text-decoration: none;
-    list-style: none;
-    border-left: 1px solid white;
-    border-right: 1px solid white;
-}
-
-a {
-    color: white;
-    text-decoration: none;
-}
-
-#first-child-li {
-    width: 20%;
-}
-
-.middle-child-li {
-    width: 60%;
-}
-
-#last-child-li {
-    width: 20%;
-}
-
-
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-footer {
-    width: 100%;
-    background-image: url(../../fonts/TelhadeFundoIlhaM.png);
-    height: 1000px;
 }
 
 .font-home:hover {
@@ -123,6 +104,24 @@ footer {
 
 .font-estrofe:hover {
     transform: scale(1.1);
+}
+
+#btn-chrono:hover {
+    border: 1px solid;
+    border-color: rgb(255, 174, 0);
+    color: rgba(255, 166, 0, 0.836);
+}
+
+#btn-undertale:hover {
+    border: 1px solid;
+    border-color: rgb(0, 174, 255);
+    color: rgb(0, 174, 255);
+}
+
+#btn-extra:hover {
+    border: 1px solid;
+    border-color: rgb(107, 107, 107);
+    color: rgb(110, 110, 110);
 }
 
 #Akira:hover {
@@ -150,6 +149,15 @@ footer {
     color: rgba(255, 255, 255, 0.918);
 }
 
+#Temmie:hover {
+    transition: 1s;
+    color: rgba(255, 255, 255, 0.918);
+}
+
+#Toby:hover {
+    transition: 1s;
+    color: rgba(255, 255, 255, 0.918);
+}
 
 /* 
     IDEIA DESCARTADA PARA UMA ANIMAÇÃO AO LADO DO VÍDEO

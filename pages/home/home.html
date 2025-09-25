@@ -5,53 +5,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Press+Start+2P&display=swap');
     </style>
-    <title>Video</title>
+    <title>Home</title>
 </head>
 
 <body>
-    <header>
-        <section>
-                <article>
-                    <video src="../../fonts/rapidsave.com_chrono_trigger_was_released_30_years_ago_today-3jy9jk72r2oe1.mp4" controls
-                        muted class="video">
-                    </video>
-                    <h2 class="font-home" style="padding-left: 50px; margin-top: 120px; margin-bottom: 60px;">'Equipe dos Sonhos'
-                    </h2>
-                    <div class="child-section">
-                        <div class="font-home" id="Hironobu">
-                            <p>Hironobu Sakaguchi <br><br>(Criador de Final Fantasy)</p>
-                        </div>
-                        <div class="font-home" id="Akira">
-                            <p>Akira Toriyama <br><br>(Criador de Dragon Ball)</p>
-                        </div>
-                        <div class="font-home" id="Yuji">
-                            <p>Yuji Horii <br><br>(Criador de Dragon Quest)</p>
-                        </div>
-                        <div class="font-home" id="Nobuo">
-                            <p>Nobuo Uematsu <br><br>(Compositor de Final Fantasy)</p>
-                        </div>
-                        <div class="font-home" id="Kazuhiko">
-                            <p>Kazuhiko Aoki <br><br>(Produtor) </p>
-                        </div>
-                    </div>
-                </article>
-            </section>
-    </header>   
     <main>
-        
+        <section>
+            <article>
+                <video src="../../fonts/rapidsave.com_chrono_trigger_was_released_30_years_ago_today-3jy9jk72r2oe1.mp4"
+                    autoplay controls class="video">
+                    <track src="../../fonts/legendasChronoTrigger.vtt" kind="subtitles" srclang="pt-br"
+                        label="Portuguese Subtitles" default>
+                    </track>
+                </video>
+                <h2 class="font-home" style="padding-left: 50px; margin-top: 120px; margin-bottom: 60px;">'Equipe dos
+                    Sonhos'
+                </h2>
+                <div class="child-section">
+                    <div class="font-home" id="Hironobu">
+                        <p>Hironobu Sakaguchi <br><br>(Criador de Final Fantasy)</p>
+                    </div>
+                    <div class="font-home" id="Akira">
+                        <p>Akira Toriyama <br><br>(Criador de Dragon Ball)</p>
+                    </div>
+                    <div class="font-home" id="Yuji">
+                        <p>Yuji Horii <br><br>(Criador de Dragon Quest)</p>
+                    </div>
+                    <div class="font-home" id="Nobuo">
+                        <p>Nobuo Uematsu <br><br>(Compositor de Final Fantasy)</p>
+                    </div>
+                    <div class="font-home" id="Kazuhiko">
+                        <p>Kazuhiko Aoki <br><br>(Produtor) </p>
+                    </div>
+                </div>
+                <details
+                    style="color: rgba(255, 255, 255, 0.603); text-align: left; margin-left: 160px; margin-top: 50px;">
+                    Akira Toriyama, não só atuou como designer profissional em Chrono Trigger mas também como fez em
+                    Dragon Quest por 38 anos.</details>
+            </article>
+            <article>
+                <video src="../../fonts/undertale-release-trailer.mp4" controls muted autoplay class="video">
+                    <track src="../../fonts/legenda.pt-br.vtt" kind="subtitles" srclang="pt-br"
+                        label="Portuguese Subtitles" default>
+                    </track>
+                </video>
+                <div class="child-section">
+                    <div class="font-home" id="Toby">
+                        <p>Toby Fox <br><br>(Desenvolvedor Principal)</p>
+                    </div>
+                    <div class="font-home" id="Temmie">
+                        <p>Temmie Chang <br><br>(Artista Principal)</p>
+                    </div>
+            </article>
+        </section>
+        <h3 style="color: white; margin-top: 300px;">Conhecer primeiro...</h3>
+        <div class="btn-home">
+            <a href="../chrono/chrono.html"><button id="btn-chrono">Chrono Trigger</button></a>
+            <a href="../"><button id="btn-undertale">Undertale</button></a>
+            <a href="../"><button id="btn-extra">Extra</button></a>
+        </div>
     </main>
-    <nav>
-        <ul>
-            <li id="first-child-li"><a href="../index/index.html">Tela Inicial</a></li>
-            <li class="middle-child-li"><a href="home.html">Chrono Trigger</a></li>
-            <li class="middle-child-li"><a href="#">Undertale</a></li>
-            <li id="last-child-li"><a href="#">Extra</a></li>
-        </ul>
-    </nav>
-    <footer></footer>
+    <img src="../../fonts/TelhadeFundoIlhaM.png" alt="" style="background-color: black; width: 100%;">
+    <footer>
+        <p>Desenvolvido por Victor Hugo 2025</p>
+    </footer>
 </body>
 
 </html>
